@@ -17,7 +17,7 @@ app.config(function($routeProvider, $locationProvider) {
       })
       .when('/breakdown', {
         templateUrl: 'partials/breakdown.html',
-        controller: 'MainController'
+        controller: 'MovesController'
       })
       .when('/stripes', {
         templateUrl: 'partials/stripes.html',

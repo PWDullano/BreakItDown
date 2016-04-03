@@ -3,3 +3,10 @@
 <a href="/sessions">SESSIONS</a>
 <a href="/stripes">STRIPES</a>
 <a href="/faq">F.A.Q</a>
+
+<div class ='moves col-xs-5' ng-repeat='move in movesCollection'>
+  <p class= 'pull-left'>Name: {{move.name}}</p>
+  <p class= 'pull-right'>Rating: {{move.difficulty}}</p>
+  <p class= 'pull-left'>Rating: {{move.class}}</p>
+  <p class= 'pull-left'>{{move.description}}</p>
+</div>
