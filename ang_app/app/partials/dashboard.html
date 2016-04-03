@@ -3,3 +3,10 @@
 <a href="/breakdown">BREAKDOWN</a>
 <a href="/stripes">STRIPES</a>
 <a href="/faq">F.A.Q</a>
+
+<div class ='moves col-xs-5' ng-repeat='user in users'>
+  <p class= 'pull-left'>Name: {{user.email}}</p>
+  <p class= 'pull-left'>Password: {{user.password}}</p>
+  <p class= 'pull-left'>Facebook: {{user.fb_id}}</p>
+  <p class= 'pull-left'>Nickname: {{user.nickname}}</p>
+</div>

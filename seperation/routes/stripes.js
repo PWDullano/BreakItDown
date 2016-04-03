@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 var knex = require("../db/knex");
 
-var Users = function(){
-  return knex('users')
+var Stripes = function(){
+  return knex('stripes')
 }
 
 router.get('/', function(req, res, next) {
-  Users().select().then(function(payload){
+  Stripes().select().then(function(payload){
     res.json(payload);
   })
 });

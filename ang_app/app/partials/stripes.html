@@ -3,3 +3,8 @@
 <a href="/breakdown">BREAKDOWN</a>
 <a href="/sessions">SESSIONS</a>
 <a href="/faq">F.A.Q</a>
+
+<div class ='moves col-xs-5' ng-repeat='stripe in stripesCollection'>
+  <p class= 'pull-left'>Name: {{stripe.title}}</p>
+  <p class= 'pull-left'>Description: {{stripe.description}}</p>
+</div>

@@ -9,7 +9,7 @@ app.config(function($routeProvider, $locationProvider) {
       })
       .when('/dashboard', {
         templateUrl: 'partials/dashboard.html',
-        controller: 'MainController'
+        controller: 'UserController'
       })
       .when('/sessions', {
         templateUrl: 'partials/sessions.html',
@@ -21,7 +21,7 @@ app.config(function($routeProvider, $locationProvider) {
       })
       .when('/stripes', {
         templateUrl: 'partials/stripes.html',
-        controller: 'MainController'
+        controller: 'StripesController'
       })
       .when('/faq', {
         templateUrl: 'partials/faq.html',

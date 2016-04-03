@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var stripes = require('./routes/stripes');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/moves', routes);
 app.use('/users', users);
+app.use('/stripes', stripes);
 
 app.use(function (req, res) {
     res.sendfile(__dirname + '/app/index.html');
