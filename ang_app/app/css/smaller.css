@@ -54,5 +54,11 @@
     height: 10vh;
     width: 100vw;
   }
+  .movesCollection{
+    width: 90%;
+    height: 60%;
+    border: 1px solid black;
+    margin:10px;
+  }
 
 }

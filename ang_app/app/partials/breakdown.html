@@ -10,12 +10,12 @@
 <br>
 <div class='moves container'>
   <div class='row'>
-    <div class ='movesCollection col-xs-4 col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
+    <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
       <div class='pull-left'>{{move.name}}</div>
       <div class='pull-right'>difficulty: {{move.difficulty}}</div>
       <br>
       <div class='pull-left'>{{move.class}}</div>
-      <div class='pull-left'>{{move.description}}</div>
+      <!-- <div class='pull-left'>{{move.description}}</div> -->
     </div>
   </div>
 </div>
