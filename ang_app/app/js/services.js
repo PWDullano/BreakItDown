@@ -16,5 +16,6 @@ app.service('breakService', function($http){
     return $http.get('https://breakitdown.herokuapp.com/stripes')
   }
 
+  
   return breakService;
 })

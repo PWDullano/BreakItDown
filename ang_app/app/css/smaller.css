@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+  .splashTitle{
+    color: black;
+    position: relative;
+    z-index: 2;
+    bottom: 90%;
+    left: 13%;
+    width: 74%;
+  }
+
+  .bodyLayout{
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .bodyText{
+    opacity: .6;
+  }
+
+  .bodyContent{
+    height: 99vh;
+    width: 100vw;
+  }
+
+  .bottomLayout{
+    width: 100vw;
+  }
+
+  .leftContent{
+    height: 30vh;
+    margin-bottom: 15px;
+  }
+
+  .leftBody, .middleBody, .rightBody{
+  }
+
+  .middleContent{
+    height: 30vh;
+    margin-bottom: 15px;
+  }
+
+  .rightContent{
+    height: 30vh;
+    margin-bottom: 15px;
+  }
+
+  .splashPics{
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+}

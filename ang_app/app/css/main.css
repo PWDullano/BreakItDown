@@ -1,0 +1,90 @@
+*{
+  font-family: 'Permanent Marker', cursive;
+}
+
+.bodyLayout{
+  width: 100vw;
+  height: 50vh;
+}
+
+.bodyContent{
+  height: 65vh;
+  width: 100vw;
+  background-color: #2F3331;
+  color: #65B18A;
+}
+
+.splashBboy{
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  border-bottom: 8px solid black;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.splashTitle{
+  color: black;
+  position: relative;
+  z-index: 2;
+  bottom: 69%;
+  left: 15%;
+  width: 21%;
+}
+
+.splashButton{
+  width: 96%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.splashPics{
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.bottomLayout{
+  width: 100vw;
+}
+
+.leftContent{
+  text-align: center;
+  height: 35vh;
+  color: black;
+}
+
+.leftBody, .middleBody, .rightBody{
+  font-size: 20px;
+}
+
+.middleContent{
+  text-align: center;
+  color: black;
+  height: 35vh;
+}
+
+.rightContent{
+  text-align: center;
+  height: 35vh;
+  color: black;;
+}
+
+.moves{
+  height: 84vh;
+  width: 100vw;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.row{
+  height: 100%;;
+}
+
+.movesCollection{
+  width: 30;
+  height: 60%;
+  border: 1px solid black;
+  margin-top:50px;
+}

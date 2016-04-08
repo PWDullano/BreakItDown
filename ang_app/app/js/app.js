@@ -13,7 +13,7 @@ app.config(function($routeProvider, $locationProvider) {
       })
       .when('/sessions', {
         templateUrl: 'partials/sessions.html',
-        controller: 'MainController'
+        controller: 'SessionController'
       })
       .when('/breakdown', {
         templateUrl: 'partials/breakdown.html',

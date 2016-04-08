@@ -3,10 +3,25 @@
 <a href="/sessions">SESSIONS</a>
 <a href="/stripes">STRIPES</a>
 <a href="/faq">F.A.Q</a>
-
-<div class ='moves col-xs-5' ng-repeat='move in movesCollection'>
-  <p class= 'pull-left'>Name: {{move.name}}</p>
-  <p class= 'pull-right'>Rating: {{move.difficulty}}</p>
-  <p class= 'pull-left'>Rating: {{move.class}}</p>
-  <p class= 'pull-left'>{{move.description}}</p>
+<br>
+  <div class ='search'>
+    <input class= 'searchBar' type="text" ng-model="pizzle.name" placeholder='Search'>
+    <select class="dropDown" name="dropDown" ng-model='sortBy'>
+      <option value="selected">--- Select ----</option>
+      <option value="difficulty">Difficulty</option>
+      <option value="name">Name</option>
+      <option value="class">Class</option>
+    </select>
+  </div>
+<br>
+<div class='moves container'>
+  <div class='row'>
+    <div class ='movesCollection col-xs-4 col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
+      <div class='pull-left'>{{move.name}}</div>
+      <div class='pull-right'>difficulty: {{move.difficulty}}</div>
+      <br>
+      <div class='pull-left'>{{move.class}}</div>
+      <div class='pull-left'>{{move.description}}</div>
+    </div>
+  </div>
 </div>
