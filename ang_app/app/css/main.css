@@ -75,7 +75,7 @@
   height: 84vh;
   width: 100vw;
   margin: 0 auto;
-  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .row{
@@ -83,10 +83,10 @@
 }
 
 .movesCollection{
-  width: 30;
-  height: 60%;
+  width: 15%;
+  height: 40%;
   border: 1px solid black;
-  margin-top:50px;
+  margin:10px;
 }
 
 .sideBar{
