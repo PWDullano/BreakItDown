@@ -60,5 +60,10 @@
     border: 1px solid black;
     margin:10px;
   }
+  .movesRow{
+    height: 50%;
+    width: 80%;
+    margin-left: 20px;
+  }
 
 }

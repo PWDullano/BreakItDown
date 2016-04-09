@@ -1,5 +1,5 @@
 <div class ='search'>
-  <input class= 'searchBar' type="text" ng-model="pizzle.name" placeholder='Search'>
+  <input class= 'searchBar' type="text" ng-model="pizzle.$" placeholder='Search'>
   <select class="dropDown" name="dropDown" ng-model='sortBy'>
     <option value="selected">--- Select ----</option>
     <option value="difficulty">Difficulty</option>
@@ -9,12 +9,11 @@
 </div>
 <br>
 <div class='moves container'>
-  <div class='row'>
+  <div class='movesRow row'>
     <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
-      <div class='pull-left'>{{move.name}}</div>
-      <div class='pull-right'>difficulty: {{move.difficulty}}</div>
-      <br>
-      <div class='pull-left'>{{move.class}}</div>
+      <h4>{{move.name}}</h4>
+      <div>{{move.class}}</div>
+      <div class='moveDifficulty'>difficulty: {{move.difficulty}}</div>
       <!-- <div class='pull-left'>{{move.description}}</div> -->
     </div>
   </div>
