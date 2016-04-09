@@ -30,6 +30,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/appointments', appointments);
+app.use('/', appointments);
 app.use('/moves', routes);
 app.use('/users', users);
 app.use('/stripes', stripes);
