@@ -1,0 +1,27 @@
+<br>
+<br>
+<br>
+<h1>HI FROM SESSIONS</h1>
+<div class="span4 offset1">
+  <form ng-submit='createSession()'>
+    <h3>Add a new session</h3>
+    <label for="date">Date:</label>
+    <input type="text" name="date" ng-model="session.date">
+
+    <label for="focus">Focus:</label>
+    <input type="text" name="focus" ng-model="session.focus">
+
+    <button class="btn btn-large btn-success" type='submit' name='button'>Commit to session</button>
+  </form>
+</div>
+
+<div class='moves container'>
+  <div class='movesRow row'>
+    <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='session in sessionsCollection'>
+      <h4>{{session.date}}</h4>
+      <br>
+      <h3>Focus</h3>
+      <div>{{session.focus}}</div>
+    </div>
+  </div>
+</div>

@@ -16,6 +16,15 @@ app.service('breakService', function($http){
     return $http.get('https://breakitdown.herokuapp.com/stripes')
   }
 
+  breakService.getSessions = function(){
+    // return $http.get('http://localhost:3000/sessions')
+    return $http.get('https://breakitdown.herokuapp.com/sessions')
+  }
+
+  breakService.newSession = function(data){
+    // return $http.post('http://localhost:3000/sessions', data)
+    return $http.post('https://breakitdown.herokuapp.com/sessions', data)
+  }
 
   return breakService;
 })

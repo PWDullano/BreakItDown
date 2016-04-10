@@ -15,7 +15,7 @@ app.controller("MainController", function($scope, $http, breakService, $routePar
     //handle error with err
   });
   }
-  
+
   $(window).scroll(function() {
   if ($(document).scrollTop() > 50) {
     $('nav').addClass('shrink');
@@ -43,15 +43,21 @@ app.controller('MovesController', function($scope, $http, breakService, $routePa
   })
 })
 
-app.controller('SessionController', function($scope, $http, breakService, $routeParams){
+app.controller('SessionController', function($scope, $http, breakService, $routeParams, $window){
   theId = $routeParams.id
-  breakService.getUser(theId).then(function(payload){
-    $scope.users = payload.data;
+  breakService.getUser(theId).then(function(users){
+    $scope.users = users.data;
   })
-  breakService.getMoves().then(function(payload){
-    $scope.movesCollection = payload.data;
+  breakService.getSessions().then(function(payload){
+    $scope.sessionsCollection = payload.data;
   })
-})
+  $scope.session = {};
+    $scope.createSession = function(){
+      breakService.newSession($scope.session).then(function(stuff){
+        $window.location.href = '/sessions';
+      })
+    }
+  })
 
 app.controller('StripesController', function($scope, $http, breakService, $routeParams){
   theId = $routeParams.id
