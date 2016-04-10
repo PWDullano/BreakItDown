@@ -1,6 +1,3 @@
-<br>
-<br>
-<br>
 <div class ='search'>
   <input class= 'searchBar' type="text" ng-model="pizzle.$" placeholder='Search'>
   <select class="dropDown" name="dropDown" ng-model='sortBy'>
@@ -16,8 +13,9 @@
     <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
       <h4>{{move.name}}</h4>
       <div>{{move.class}}</div>
-      <!-- <div class='pull-left'>{{move.description}}</div> -->
+      <img class='classpic' src="{{move.picture}}" alt="classPic">
       <div class='moveDifficulty'>difficulty: {{move.difficulty}}</div>
+      <!-- <div class='pull-left'>{{move.description}}</div> -->
     </div>
   </div>
   <br>
