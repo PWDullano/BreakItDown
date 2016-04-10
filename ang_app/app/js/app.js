@@ -7,7 +7,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'partials/splash.html',
         controller: 'MainController'
       })
-      .when('/dashboard', {
+      .when('/users/:id', {
         templateUrl: 'partials/dashboard.html',
         controller: 'UserController'
       })

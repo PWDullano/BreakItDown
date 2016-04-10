@@ -17,8 +17,10 @@ app.controller("MainController", function($scope, $http, breakService){
   }
 });
 
-app.controller('UserController', function($scope, $http, breakService){
-  breakService.getUser().then(function(payload){
+app.controller('UserController', function($scope, $http, breakService, $routeParams){
+  theId = $routeParams.id
+  console.log('params are '+theId);
+  breakService.getUser(theId).then(function(payload){
     $scope.users = payload.data;
   })
 })

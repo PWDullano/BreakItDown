@@ -35,7 +35,7 @@ app.use('/users', users);
 app.use('/stripes', stripes);
 
 app.use(function (req, res) {
-    res.sendfile(__dirname + '/app/index.html');
+    res.sendFile(__dirname + '/app/index.html');
 });
 
 // catch 404 and forward to error handler
