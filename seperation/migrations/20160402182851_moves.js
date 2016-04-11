@@ -4,6 +4,7 @@ exports.up = function(knex, Promise) {
     table.string('name');
     table.string('class');
     table.string('description');
+    table.string('picture');
     table.integer('difficulty');
   })
 };
