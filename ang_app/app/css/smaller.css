@@ -66,5 +66,20 @@
     width: 80%;
     margin-left: 20px;
   }
+  .moveDifficulty{
+    position: absolute;
+    bottom: 70px;
+    left: 140px;
+  }
+  .moveDesc{
+    width: 90%;
+  }
+  .classpic{
+    padding-left: 50px;
+  }
+  .flip-container, .front, .back {
+  	width: 250px;
+  	height: 100px;
+  }
 
 }

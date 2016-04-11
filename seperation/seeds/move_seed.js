@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
       id: 1,
       name: 'Top Rock',
       class: 'style',
-      description: 'Toprock is a major element of b-boying and b-girling. It generally refers to foot movement performed from a standing position, relying upon a mixture of coordination, flexibility, rhythm, and most importantly, style.',
+      description: 'Foot movement performed from a standing position, relying upon a mixture of coordination, flexibility, rhythm, and most importantly, style.',
       difficulty: 1}),
     knex('moves').insert({
       id: 2,
@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
       id: 5,
       name: 'Swipes',
       class: 'power',
-      description: 'The Swipe is one of the most recognizable power moves in b-boying. The b-boy or b-girl leans back, whips his or her arms to one side to touch the ground, and his or her legs follow closely behind, twisting 360 degrees to land on the ground once again.',
+      description: 'The b-boy or b-girl leans back, whips his or her arms to one side to touch the ground, and his or her legs follow closely behind, twisting 360 degrees to land on the ground once again.',
       difficulty: 2}),
     knex('moves').insert({
       id: 6,
@@ -57,7 +57,7 @@ exports.seed = function(knex, Promise) {
       id: 9,
       name: 'Six-Step',
       class: 'style',
-      description: 'The 6-step is foundational to b-boying not only because it is the first footwork sequence breakers often learn, but also because it remains the move around which many sets are structured.',
+      description: 'The first footwork sequence breakers often learn, but also because it remains the move around which many sets are structured.',
       difficulty: 4}),
     knex('moves').insert({
       id: 10,
@@ -93,7 +93,7 @@ exports.seed = function(knex, Promise) {
       id: 15,
       name: 'Airflare',
       class: 'power',
-      description: "The Airflare refers to an acrobatic maneuver in which the performer rotates the torso around the vertical axis of their body while traveling in a circular path along a plane in parallel with the floor. It is recommended that this move is tried on mats",
+      description: "An acrobatic maneuver in which the performer rotates the torso around the vertical axis of their body while traveling in a circular path along a plane in parallel with the floor.",
       difficulty: 5}),
     knex('moves').insert({
       id: 16,
