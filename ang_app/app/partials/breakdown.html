@@ -11,22 +11,25 @@
   </select>
 </div>
 <br>
+
 <div class='moves container'>
   <div class='movesRow row'>
     <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       	<div class="flipper">
-      		<div class="front">
-      			<!-- front content -->
-            <h4>{{move.name}}</h4>
-            <div>{{move.class}}</div>
-            <img class='classpic' src="{{move.picture}}" alt="classPic">
-            <div class='moveDifficulty'>difficulty: {{move.difficulty}}</div>
-      		</div>
-      		<div class="back">
-            <div class='moveDesc pull-left'>{{move.description}}</div>
-      			<!-- back content -->
-      		</div>
+          <a class ='moveLink' href="{{move.url}}">
+            <div class="front">
+              <!-- front content -->
+              <h4>{{move.name}}</h4>
+              <div>{{move.class}}</div>
+              <img class='classpic' src="{{move.picture}}" alt="classPic">
+              <div class='moveDifficulty'>difficulty: {{move.difficulty}}</div>
+            </div>
+            <div class="back">
+              <div class='moveDesc pull-left'>{{move.description}}</div>
+              <!-- back content -->
+            </div>
+          </a>
       	</div>
       </div>
     </div>

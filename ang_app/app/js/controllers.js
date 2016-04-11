@@ -3,7 +3,7 @@ app.controller("MainController", function($scope, $http, breakService, $routePar
     OAuth.initialize('j5M_X54Ak-3-aOAdqohn_SMQsrI');
     OAuth.popup('facebook')
     .done(function(result) {
-    result.me()
+    result.me(['firstname', 'lastname', 'email'])
     .done(function (response) {
         console.log(response);
     })

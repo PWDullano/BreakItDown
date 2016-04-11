@@ -99,6 +99,14 @@
   font-size: 14px;
 }
 
+a{
+  color:black;
+}
+
+a:hover{
+  color: black
+}
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
