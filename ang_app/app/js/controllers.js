@@ -54,7 +54,7 @@ app.controller('SessionController', function($scope, $http, breakService, $route
   $scope.session = {};
     $scope.createSession = function(){
       breakService.newSession($scope.session).then(function(stuff){
-        $window.location.href = '/sessions';
+        $window.location.href = '/users/1/sessions';
       })
     }
   })
