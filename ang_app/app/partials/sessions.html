@@ -16,30 +16,22 @@
                      <span aria-hidden="true">&times;</span>
                      <span class="sr-only">Close</span>
               </button>
-              <h4 class="modal-title" id="myModalLabel">
+              <h3 class="modal-title" id="myModalLabel">
                   Create A new session
-              </h4>
+              </h3>
           </div>
             <div class="modal-body">
               <div class="span4 offset1">
                 <form ng-submit='createSession()'>
-                  <label for="date">Date:</label>
-                  <input type="text" name="date" ng-model="session.date">
-
-                  <!-- <label for="focus">Focus:</label>
-                  <input type="text" name="focus" ng-model="session.focus"> -->
+                  <label class="date"for="date"><h3>Date:</h3></label>
+                  <input type="text" name="date" ng-model="session.date" placeholder="6/24/2016">
                   <button class="btn btn-large btn-success" type='submit' name='button'>Commit to session</button>
                   <br>
                   <br>
                   <div class ='search'>
-                    <input class= 'searchBar' type="text" ng-model="pizzle.$" placeholder='Search'>
-                    <select class="dropDown" name="dropDown" ng-model='sortBy'>
-                      <option value="selected">--- Select ----</option>
-                      <option value="difficulty">Difficulty</option>
-                      <option value="name">Name</option>
-                      <option value="class">Class</option>
-                    </select>
+                    <input class= 'searchBar' type="text" ng-model="pizzle.$" placeholder='Search for a move...'>
                   </div>
+                  <br>
                   <div class='sessionMoves container'>
                     <div class='sessionMovesRow row'>
                       <div class ='sessionMovesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
