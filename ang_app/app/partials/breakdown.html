@@ -11,7 +11,7 @@
     <div class ='movesCollection col-sm-4 col-md-4' ng-repeat='move in movesCollection | filter:pizzle | orderBy:sortBy'>
       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       	<div class="flipper">
-          <a class ='moveLink' href="{{move.url}}">
+          <a class ='moveLink' href="{{move.url}}" target="_blank">
             <div class="front">
               <!-- front content -->
               <h4>{{move.name}}</h4>
