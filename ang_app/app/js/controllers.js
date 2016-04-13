@@ -51,13 +51,33 @@ app.controller('SessionController', function($scope, $http, breakService, $route
   breakService.getSessions().then(function(payload){
     $scope.sessionsCollection = payload.data;
   })
-  $scope.session = {};
-    $scope.createSession = function(){
-      breakService.newSession($scope.session).then(function(stuff){
-        $window.location.href = '/users/1/sessions';
-      })
-    }
+
+  breakService.getMoves().then(function(moves){
+    $scope.movesCollection = moves.data;
   })
+  $scope.session = {};
+
+  $scope.check = function(value, checked) {
+  var indx = $scope.session.focus.indexOf(value);
+  if (indx >= 0 && !checked) {
+    $scope.session.focus.splice(indx, 1);
+  }
+  if (indx < 0 && checked) {
+    $scope.session.focus.push(value);
+  }
+  console.log($scope.session.focus);
+};
+
+$scope.session = {
+  focus: []
+}
+
+$scope.createSession = function(){
+  breakService.newSession($scope.session).then(function(stuff){
+    $window.location.href = '/users/1/sessions';
+  })
+}
+})
 
 app.controller('StripesController', function($scope, $http, breakService, $routeParams){
   theId = $routeParams.id

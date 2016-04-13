@@ -103,6 +103,10 @@
   height: 100%;
 }
 
+.sessionButton{
+  margin-left: 100px;
+}
+
 .moves{
   height: 84vh;
 }
@@ -110,6 +114,43 @@
 .row{
   height: 100%;
 }
+
+.sessionMoves{
+  width: 100%;
+}
+
+.sessionMovesCollection{
+  border-radius: 10%;
+  border: 5px solid black;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+.session{
+  width: 100%;
+}
+
+.sessionRow{
+  width: 100%;
+}
+
+.sessionCollection{
+  width: 40%;
+  height: 40%;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  border: 5px solid black;
+  border-radius: 8%;
+}
+
+.sessionFocus{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
 
 .movesCollection{
   width: 19%;
