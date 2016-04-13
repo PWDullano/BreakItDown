@@ -7,10 +7,10 @@ exports.seed = function(knex, Promise) {
     // Inserts seed entries
     knex('users').insert({
       id: 1,
-      email: 'JohnDoe@gmail.com',
+      email: 'Patrick W. Dullano',
       password: '123',
       fb_id: 'JDoe',
-      nickname: 'BBoy JDoes'})
+      nickname: 'BBoy Dullano'})
 
   );
 };
