@@ -73,6 +73,10 @@
   color: black;;
 }
 
+.text{
+  text-align: center;
+}
+
 .dash{
   height: 84vh;
 }
